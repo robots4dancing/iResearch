@@ -12,6 +12,8 @@
 		1F5ACDBF1E9D62C500B0D0A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5ACDBD1E9D62C500B0D0A6 /* Main.storyboard */; };
 		1F5ACDC11E9D62C500B0D0A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F5ACDC01E9D62C500B0D0A6 /* Assets.xcassets */; };
 		1F5ACDC41E9D62C500B0D0A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5ACDC21E9D62C500B0D0A6 /* LaunchScreen.storyboard */; };
+		3BB31EF8090F0CC56C4CE1DA /* Pods_iResearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34BA0FCE8A84F21D3FEDE28E /* Pods_iResearch.framework */; };
+		814485551E9DA1BB00729634 /* SurveyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814485541E9DA1BB00729634 /* SurveyTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		1F5ACDC01E9D62C500B0D0A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F5ACDC31E9D62C500B0D0A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F5ACDC51E9D62C500B0D0A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34BA0FCE8A84F21D3FEDE28E /* Pods_iResearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iResearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		814485541E9DA1BB00729634 /* SurveyTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyTask.swift; sourceTree = "<group>"; };
+		AD6461FD03DDFB1085AC692A /* Pods-iResearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iResearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-iResearch/Pods-iResearch.release.xcconfig"; sourceTree = "<group>"; };
+		EEEA4A7B9CF4E9FD9D46CC51 /* Pods-iResearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iResearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iResearch/Pods-iResearch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BB31EF8090F0CC56C4CE1DA /* Pods_iResearch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				1F5ACDB81E9D62C500B0D0A6 /* iResearch */,
 				1F5ACDB71E9D62C500B0D0A6 /* Products */,
+				7E6E39C0C3A8C2BE7903F5BF /* Pods */,
+				C4E6FDBA067770C1D516853A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +65,30 @@
 			children = (
 				1F5ACDB91E9D62C500B0D0A6 /* AppDelegate.swift */,
 				1F5ACDBB1E9D62C500B0D0A6 /* ViewController.swift */,
+				814485541E9DA1BB00729634 /* SurveyTask.swift */,
 				1F5ACDBD1E9D62C500B0D0A6 /* Main.storyboard */,
 				1F5ACDC01E9D62C500B0D0A6 /* Assets.xcassets */,
 				1F5ACDC21E9D62C500B0D0A6 /* LaunchScreen.storyboard */,
 				1F5ACDC51E9D62C500B0D0A6 /* Info.plist */,
 			);
 			path = iResearch;
+			sourceTree = "<group>";
+		};
+		7E6E39C0C3A8C2BE7903F5BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EEEA4A7B9CF4E9FD9D46CC51 /* Pods-iResearch.debug.xcconfig */,
+				AD6461FD03DDFB1085AC692A /* Pods-iResearch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C4E6FDBA067770C1D516853A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34BA0FCE8A84F21D3FEDE28E /* Pods_iResearch.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F5ACDC81E9D62C500B0D0A6 /* Build configuration list for PBXNativeTarget "iResearch" */;
 			buildPhases = (
+				50A0DCF2F5699D439CD2AB6A /* [CP] Check Pods Manifest.lock */,
 				1F5ACDB21E9D62C500B0D0A6 /* Sources */,
 				1F5ACDB31E9D62C500B0D0A6 /* Frameworks */,
 				1F5ACDB41E9D62C500B0D0A6 /* Resources */,
+				0326D4815BBE8DD8B05C1DE7 /* [CP] Embed Pods Frameworks */,
+				C64A456823AB108C1A37E0AC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +162,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0326D4815BBE8DD8B05C1DE7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iResearch/Pods-iResearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50A0DCF2F5699D439CD2AB6A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C64A456823AB108C1A37E0AC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iResearch/Pods-iResearch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1F5ACDB21E9D62C500B0D0A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,6 +217,7 @@
 			files = (
 				1F5ACDBC1E9D62C500B0D0A6 /* ViewController.swift in Sources */,
 				1F5ACDBA1E9D62C500B0D0A6 /* AppDelegate.swift in Sources */,
+				814485551E9DA1BB00729634 /* SurveyTask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +338,7 @@
 		};
 		1F5ACDC91E9D62C500B0D0A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEEA4A7B9CF4E9FD9D46CC51 /* Pods-iResearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7U5U386F4Y;
@@ -272,6 +352,7 @@
 		};
 		1F5ACDCA1E9D62C500B0D0A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD6461FD03DDFB1085AC692A /* Pods-iResearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7U5U386F4Y;
@@ -302,6 +383,7 @@
 				1F5ACDCA1E9D62C500B0D0A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
